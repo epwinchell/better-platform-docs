@@ -161,13 +161,13 @@ const Li: React.FC<PropsWithChildren> = ({ children }) => (
 );
 
 const OrderedList: React.FC<PropsWithChildren> = ({ children }) => (
-  <TextContent>
+  <TextContent className="pf-u-pt-sm">
     <TextList component={TextListVariants.ol}>{children}</TextList>
   </TextContent>
 );
 
 export const UnorderedList: React.FC<PropsWithChildren> = ({ children }) => (
-  <TextContent>
+  <TextContent className="pf-u-pt-sm">
     <TextList component={TextListVariants.ul}>{children}</TextList>
   </TextContent>
 );
@@ -176,7 +176,7 @@ export const Paragraph: React.FC<PropsWithChildren<{ className?: string }>> = ({
   children,
   className,
 }) => (
-  <TextContent className={className}>
+  <TextContent className={className} className="pf-u-pt-sm">
     <Text component={TextVariants.p}>{children}</Text>
   </TextContent>
 );
